@@ -21,18 +21,18 @@ public class AnemometroResource {
 	@Autowired
 	private AnemometroRepository repository;
 	
-	@GetMapping(value = "/{uuid}")
-	public ResponseEntity<Anemometro> buscarPorUuid(@PathVariable String uuid) {	
-    return ResponseEntity.
-    					status(HttpStatus.OK).
-    					body( repository.getByUuid(uuid) );
-	}
-	@PostMapping()
-	public ResponseEntity<Anemometro> salvarAnemometro(@RequestBody Anemometro p) {
-	return ResponseEntity.
-						status(HttpStatus.OK).
-						body( this.repository.save(p) );
-	}
+//	@GetMapping(value = "/{uuid}")
+//	public ResponseEntity<Anemometro> buscarPorUuid(@PathVariable String uuid) {	
+//    return ResponseEntity.
+//    					status(HttpStatus.OK).
+//    					body( repository.getByUuid(uuid) );
+//	}
+//	@PostMapping()
+//	public ResponseEntity<Anemometro> salvarAnemometro(@RequestBody Anemometro p) {
+//	return ResponseEntity.
+//						status(HttpStatus.OK).
+//						body( this.repository.save(p) );
+//	}
 	
 
 }

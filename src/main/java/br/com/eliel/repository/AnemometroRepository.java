@@ -1,7 +1,11 @@
 package br.com.eliel.repository;
 
+import java.util.Date;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import br.com.eliel.domain.Anemometro;
 
 @Repository
 public interface AnemometroRepository extends JpaRepository<Anemometro, Long>{
@@ -11,7 +15,7 @@ public interface AnemometroRepository extends JpaRepository<Anemometro, Long>{
 	 
 	Anemometro getByUuid(String uuid);
 	
-	Anemometro getByData(Date registroData);
+	Anemometro getByregistroData(Date registroData);
 	
 		
 }
